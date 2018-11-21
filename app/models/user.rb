@@ -5,7 +5,7 @@ class User < ApplicationRecord
     def self.daily_bonus
         self.transaction do 
             all.each do |player|
-                player.age += 10
+                player.age += 22
                 player.save
             end
         end 
