@@ -1,6 +1,6 @@
-namespace :tasks do 
-    desc "Esta tarea se "
-    task :give_money => :environmet do
-            User.daily_bonus
-    end
-end 
+
+
+task :bonus => :environment do
+    User.daily_bonus
+    puts "HOLA"
+end
